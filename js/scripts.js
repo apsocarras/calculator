@@ -8,15 +8,31 @@ function add(number1, number2) {
 }
  
 // subtraction
-function subtraction ( number1, number2) {
+function subtraction(number1, number2) {
   return number1 - number2;
 }
+
+//multiplication
+function multiplication(mult1, mult2) {
+  return mult1 * mult2;
+}
+
+// division
+function division(divisor1, divisor2){
+  return divisor1/divisor2;
+}
+
 // user interface logic 
 const number1 = parseInt(prompt("Enter a number:"));
 const number2 = parseInt(prompt("Enter another number:"));
+
 const addDisplay = ("This is the addition result: " + add(number1, number2) + ". " + `\n`); 
 const subDisplay = ("This is the subtraction result: " + subtraction(number1, number2) + ". " + `\n`);
-window.alert(addDisplay + subDisplay);
+const multDisplay = ("This is the multiplication result: " + multiplication(number1, number2) + ". " + `\n`);
+const divDisplay = ("This is the division result: " + division(number1, number2) + ". " + `\n`);
+
+
+window.alert(addDisplay + subDisplay + multDisplay + divDisplay);
 
 
 

@@ -6,11 +6,17 @@
 function add(number1, number2) {
   return number1 + number2;
 }
-
+ 
+// subtraction
+function subtraction ( number1, number2) {
+  return number1 - number2;
+}
 // user interface logic 
 const number1 = parseInt(prompt("Enter a number:"));
 const number2 = parseInt(prompt("Enter another number:"));
-window.alert(add(number1, number2));
+const addDisplay = ("This is the addition result: " + add(number1, number2) + ". " + `\n`); 
+const subDisplay = ("This is the subtraction result: " + subtraction(number1, number2) + ". " + `\n`);
+window.alert(addDisplay + subDisplay);
 
 
 

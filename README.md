@@ -1,20 +1,22 @@
-# _{Repo Name}_
+# _Calculator_
 
-#### By _**{Author}**_
+#### By _Vera Weikel, Alejandro Socarras_
 
-#### _{Brief Description}_
+#### _Does arithmetic using user-inputted values._
 
 ## Technologies Used
 
-* {List}
+* HTML
+* CSS
+* JS
 
 ## Description
 
-_{More detailed information about contents}_
+_It's a calculator app which takes "events" from user input, translates those into JS (user-interface logic), runs calculations in the background (business logic), and displays said results back to the user (user-interface logic)._
 
 ## Setup/Installation Requirements
 
-_{"N/A" if setup/install not required}_
+_N/A_
 
 ## Known Bugs
 
@@ -24,4 +26,4 @@ _{"No known bugs" if none}_
 
 _[MIT License](https://opensource.org/licenses/MIT)_
 
-Copyright (c) _10.11.22_ {Author}
+Copyright (c) _10.17.22_ Vera Weikel, Alejandro Socarras 

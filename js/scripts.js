@@ -26,10 +26,10 @@ function division(divisor1, divisor2){
 const number1 = parseInt(prompt("Enter a number:"));
 const number2 = parseInt(prompt("Enter another number:"));
 
-const addDisplay = ("This is the addition result: " + add(number1, number2) + ". " + `\n`); 
-const subDisplay = ("This is the subtraction result: " + subtraction(number1, number2) + ". " + `\n`);
-const multDisplay = ("This is the multiplication result: " + multiplication(number1, number2) + ". " + `\n`);
-const divDisplay = ("This is the division result: " + division(number1, number2) + ". " + `\n`);
+const addDisplay = ("This is the addition result: " + number1 + " + " + number2 + " = " + add(number1, number2) + ". " + `\n`); 
+const subDisplay = ("This is the subtraction result: " + number1 + " - " + number2 + " = " + subtraction(number1, number2) + ". " + `\n`);
+const multDisplay = ("This is the multiplication result: " + number1 + " * " + number2 + " = " + multiplication(number1, number2) + ". " + `\n`);
+const divDisplay = ("This is the division result: " + number1 + " / " + number2 + " = " + division(number1, number2) + ". " + `\n`);
 
 
 window.alert(addDisplay + subDisplay + multDisplay + divDisplay);

@@ -12,5 +12,42 @@
     <script>
       window.alert("Woo-hoo! We've embedded a script into our HTML.");
     </script> -->
+    <form id="calculator">
+      <div class="form-group">
+        <label for="input-number-one">Input number one</label>
+        <input type="value" class="form-control" id="inputNumberOne" aria-describedby="inputNumberOne" placeholder="input-number-one">
+        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+      </div>
+
+      <div class="form-group">
+        <label for="input-number-two">Input number two</label>
+        <input type="value" class="form-control" id="inputNumberTwo" placeholder="input-number-two">
+      </div>
+      
+      <label>
+        <input type="radio" name="operator" value="add">
+        add
+      </label>
+      <label>
+        <input type="radio" name="operator" value="subtract">
+        subtract
+      </label>
+      <label>
+        <input type="radio" name="operator" value="multiply">
+        multiply
+      </label>
+      <label>
+        <input type="radio" name="operator" value="divide">
+        divide
+      </label>
+      
+      <button type="submit" class="btn btn-primary">Submit</button>
+     </form>
+
+      <!-- <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div> -->
+
   </body>
 </html> 

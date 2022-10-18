@@ -20,7 +20,7 @@ _N/A_
 
 ## Known Bugs
 
-_{"No known bugs" if none}_
+_None._
 
 ## License
 

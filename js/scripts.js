@@ -29,13 +29,24 @@ function handleCalculation(event){
 
   const number1 = parseInt(document.querySelector("input#inputNumberOne").value);
   const number2 = parseInt(document.querySelector("input#inputNumberTwo").value);
-
   const operator = document.querySelector("input[name='operator']:checked").value;
+
   console.log("Number 1: " + number1);
   console.log("Number 2: " + number2);
   console.log("Operator:", operator);
 
+  let result; 
+  if (operator === "add") {
+      result = add(number1, number2);
+  } else if (operator === "subtraction") {
+      result = subtraction(number1, number2);
+  } else if (operator === "multiplication") {
+    result = multiplication(number1,number2);
+  } else if (operator === "division") {
+    result = division(number1, number2);
+  }
   
+  document.getElementById("output").innerText = result;
 }
 
 window.addEventListener("load", function(){

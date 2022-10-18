@@ -24,7 +24,19 @@ function division(divisor1, divisor2){
 
 // // user interface logic 
 
-function handleCalculation(event){
+function calculate(num1, num2, operatorParam) {
+  if (operatorParam === "add") {
+    return add(num1, num2);
+  } else if (operatorParam === "subtraction") {
+    return subtraction(num1, num2);
+  } else if (operatorParam === "multiplication") {
+    return multiplication(num1, num2);
+  } else if (operatorParam === "division") {
+    return division(num1, num2);
+  }
+}
+
+function handleSubmission(event){
   event.preventDefault();
 
   const number1 = parseInt(document.querySelector("input#inputNumberOne").value);
@@ -35,23 +47,25 @@ function handleCalculation(event){
   console.log("Number 2: " + number2);
   console.log("Operator:", operator);
 
-  let result; 
-  if (operator === "add") {
-      result = add(number1, number2);
-  } else if (operator === "subtraction") {
-      result = subtraction(number1, number2);
-  } else if (operator === "multiplication") {
-    result = multiplication(number1,number2);
-  } else if (operator === "division") {
-    result = division(number1, number2);
-  }
+  // let result; 
+  // if (operator === "add") {
+  //     result = add(number1, number2);
+  // } else if (operator === "subtraction") {
+  //     result = subtraction(number1, number2);
+  // } else if (operator === "multiplication") {
+  //   result = multiplication(number1,number2);
+  // } else if (operator === "division") {
+  //   result = division(number1, number2);
+  // }
   
+  let result = calculate(number1, number2, operator);
+
   document.getElementById("output").innerText = result;
 }
 
 window.addEventListener("load", function(){
   const form = document.getElementById("calculator");
-  form.addEventListener("submit", handleCalculation);
+  form.addEventListener("submit", handleSubmission);
 });
 
 // const number1 = parseInt(prompt("Enter a number:"));
@@ -61,6 +75,7 @@ const addDisplay = ("This is the addition result: " + number1 + " + " + number2 
 const subDisplay = ("This is the subtraction result: " + number1 + " - " + number2 + " = " + subtraction(number1, number2) + ". " + `\n`);
 const multDisplay = ("This is the multiplication result: " + number1 + " * " + number2 + " = " + multiplication(number1, number2) + ". " + `\n`);
 const divDisplay = ("This is the division result: " + number1 + " / " + number2 + " = " + division(number1, number2) + ". " + `\n`);
+/**/
 
 
 // window.alert(addDisplay + subDisplay + multDisplay + divDisplay);
